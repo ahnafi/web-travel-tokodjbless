@@ -1,0 +1,109 @@
+:root {
+    --bs-info: #0698aa;
+    --shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    --transition: ease-in all 0.3s;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Alice', serif;
+}
+body {
+    user-select: none !important;
+    user-zoom: none !important;
+    -moz-user-select: none !important;
+    -webkit-user-drag: none !important;
+    -webkit-user-select: none !important;
+    font-family: 'Poppins' !important;
+}
+.logo-text {
+    width: calc(180px + 6vw);
+    min-width: 180px;
+}
+.menu li:hover a {
+    color: var(--bs-info) !important;
+}
+.my-button:hover{
+    animation: bottom 2s infinite;
+}
+@keyframes bottom {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.spasi {
+    height: calc(10px + 3vw);
+}
+.spasi-2 {
+    height: calc(100px + 15vw);
+}
+.daftar-keunggulan:hover {
+    box-shadow: var(--shadow) !important;
+    transition: var(--transition);
+}
+#content-keunggulan {
+    margin-top: calc(-100px + -15vw);
+}
+.icon-keunggulan {
+    height: calc(40px + 5vh);
+    width: calc(40px + 5vh);
+    position: relative;
+    bottom: calc(20px + 2.5vh);
+}
+.text-keunggulan {
+    position: relative;
+    bottom: 20px;
+}
+.daftar-rute:hover {
+    box-shadow: var(--shadow) !important;
+    transition: var(--transition);
+}
+.my-thumbnail {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    filter: contrast(0.5);
+    transition: var(--transition);
+}
+.my-thumbnail:hover {
+    filter: contrast(0.7);
+}
+.harga {
+    top: -40px;
+    right: 15px;
+    position: absolute;
+    letter-spacing: .5px;
+}
+.text-12px {
+    font-size: 12px;
+}
+.text-14px {
+    font-size: 14px;
+}
+a.my-link:hover {
+    color: var(--bs-info);
+}
+#whatsapp-button {
+    height: calc(40px + 3vh);
+    width: calc(40px + 3vh);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2ab318;
+    transition: var(--transition);
+}
+#whatsapp-button:hover {
+    background: #219012;
+    scale: 1.1;
+}
